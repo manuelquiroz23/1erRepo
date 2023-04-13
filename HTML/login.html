@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
-<link rel="stylesheet" href="CSS\csslogin.css">
-<head>
-	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<div class="login-box">
-		<h2>Login</h2>
-		<form>
-			<label>Username</label>
-			<input type="text" placeholder="Ingresa tu correo electronico">
-			<label>Password</label>
-			<input type="password" placeholder="Ingresa la contraseña">
-			<input type="submit" value="Login">
-			<p>Don't have an account? <a href="register.html">Register</a></p>
-		</form>
-	</div>
-</body>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="CSS/csslogin.css">
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>Login</h2>
+      <form id="login-form">
+        <div class="user-box">
+		  <label>Username</label>
+          <input type="text" name="username" required="">
+        </div>
+        <div class="user-box">
+		  <label>Password</label>
+          <input type="password" name="password" required="">
+        </div>
+        <div class="user-box">
+          <select name="role" id="role-select">
+            <option value="client">Client</option>
+            <option value="employee">Employee</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+        <a href="pagprincipal.html" onclick="login()">Login</a>
+      </form>
+    </div>
+    <script src="JavaScript/loginJS.js"></script>
+  </body>
 </html>
