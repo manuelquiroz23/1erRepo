@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
 
     <header>
         <nav>
             <a href="#">
-                <img src="Images\logo.jpeg" alt="logo">
+                <img src="Images/logo.jpeg" alt="logo">
             </a>
             <ul>
-                <li><a href="#">Pagina Principal</a></li>
+                <li><a href="pagprincipal.php">Pagina Principal</a></li>
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Ubicacion</a></li>
                 <li><a href="#">Contacto</a></li>
@@ -25,7 +26,7 @@
                     <input type="password" name="pwd" placeholder="Password">
                     <button type="submit" name=login-submit>Login</button>
                 </form>
-                <a href="IniciarSesion.php">Iniciar Sesion</a>
+                <a href="registro.php">Registrarse</a>
                 <form action="Includes/logout.inc.php" method="post">
                     <button type="submit" name=logout-submit>Cerrar sesion</button>
                 </form>
