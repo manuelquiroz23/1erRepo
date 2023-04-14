@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 13-04-2023 a las 06:37:38
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.0.28
+-- Servidor: localhost
+-- Tiempo de generación: 14-04-2023 a las 23:59:40
+-- Versión del servidor: 10.4.21-MariaDB
+-- Versión de PHP: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,16 +18,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `planchadurialomalinda`
+-- Base de datos: `PlanchaduriaLomaLinda`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `administradores`
+-- Estructura de tabla para la tabla `Administradores`
 --
 
-CREATE TABLE `administradores` (
+CREATE TABLE `Administradores` (
   `Id_Admin` int(11) NOT NULL,
   `NombreAdmin` varchar(30) NOT NULL,
   `DireccionAdmin` varchar(30) NOT NULL,
@@ -35,30 +35,29 @@ CREATE TABLE `administradores` (
   `CorreoAdmin` varchar(30) NOT NULL,
   `UsuarioAdmin` varchar(20) NOT NULL,
   `PassAdmin` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `clientes`
+-- Estructura de tabla para la tabla `Clientes`
 --
 
-CREATE TABLE `clientes` (
+CREATE TABLE `Clientes` (
   `Id_Cliente` int(11) NOT NULL,
   `NombreCliente` varchar(80) NOT NULL,
-  `DireccionCliente` varchar(80) NOT NULL,
-  `TelefonoCliente` varchar(12) NOT NULL,
   `CorreoCliente` varchar(30) NOT NULL,
-  `FechaRegistroCliente` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `uidUser` tinytext NOT NULL,
+  `pwdUser` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `empleado`
+-- Estructura de tabla para la tabla `Empleado`
 --
 
-CREATE TABLE `empleado` (
+CREATE TABLE `Empleado` (
   `Id_Empleado` int(11) NOT NULL,
   `NombreEmpleado` varchar(30) NOT NULL,
   `DireccionEmpleado` varchar(40) NOT NULL,
@@ -67,70 +66,47 @@ CREATE TABLE `empleado` (
   `FechaInicio` date NOT NULL,
   `Salario` float NOT NULL,
   `ObservacionesEmpleados` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='Tabla Empleados';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Tabla Empleados';
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `pedidos`
+-- Estructura de tabla para la tabla `Servicios`
 --
 
-CREATE TABLE `pedidos` (
-  `Id_Pedido` int(11) NOT NULL,
-  `NomPedido` varchar(30) NOT NULL,
-  `DomicilioPedido` varchar(40) NOT NULL,
-  `TelefonoPedido` varchar(12) NOT NULL,
-  `FechaPedido` date NOT NULL,
-  `HoraPedido` varchar(30) NOT NULL,
-  `NoDePiezas` int(11) NOT NULL,
-  `TipoPedido` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `servicios`
---
-
-CREATE TABLE `servicios` (
+CREATE TABLE `Servicios` (
   `Id_Servicios` int(11) NOT NULL,
   `DescripcionServicios` varchar(50) NOT NULL,
   `PrecioSErvicio` float NOT NULL,
   `ObservacionesServicios` varchar(80) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `administradores`
+-- Indices de la tabla `Administradores`
 --
-ALTER TABLE `administradores`
+ALTER TABLE `Administradores`
   ADD PRIMARY KEY (`Id_Admin`);
 
 --
--- Indices de la tabla `clientes`
+-- Indices de la tabla `Clientes`
 --
-ALTER TABLE `clientes`
+ALTER TABLE `Clientes`
   ADD PRIMARY KEY (`Id_Cliente`);
 
 --
--- Indices de la tabla `empleado`
+-- Indices de la tabla `Empleado`
 --
-ALTER TABLE `empleado`
+ALTER TABLE `Empleado`
   ADD PRIMARY KEY (`Id_Empleado`);
 
 --
--- Indices de la tabla `pedidos`
+-- Indices de la tabla `Servicios`
 --
-ALTER TABLE `pedidos`
-  ADD PRIMARY KEY (`Id_Pedido`);
-
---
--- Indices de la tabla `servicios`
---
-ALTER TABLE `servicios`
+ALTER TABLE `Servicios`
   ADD PRIMARY KEY (`Id_Servicios`);
 
 --
@@ -138,33 +114,27 @@ ALTER TABLE `servicios`
 --
 
 --
--- AUTO_INCREMENT de la tabla `administradores`
+-- AUTO_INCREMENT de la tabla `Administradores`
 --
-ALTER TABLE `administradores`
+ALTER TABLE `Administradores`
   MODIFY `Id_Admin` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `clientes`
+-- AUTO_INCREMENT de la tabla `Clientes`
 --
-ALTER TABLE `clientes`
+ALTER TABLE `Clientes`
   MODIFY `Id_Cliente` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `empleado`
+-- AUTO_INCREMENT de la tabla `Empleado`
 --
-ALTER TABLE `empleado`
+ALTER TABLE `Empleado`
   MODIFY `Id_Empleado` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `pedidos`
+-- AUTO_INCREMENT de la tabla `Servicios`
 --
-ALTER TABLE `pedidos`
-  MODIFY `Id_Pedido` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `servicios`
---
-ALTER TABLE `servicios`
+ALTER TABLE `Servicios`
   MODIFY `Id_Servicios` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 

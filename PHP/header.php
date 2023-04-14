@@ -26,7 +26,7 @@
                     <input type="password" name="pwd" placeholder="Password">
                     <button type="submit" name=login-submit>Login</button>
                 </form>
-                <a href="registro.php">Registrarse</a>
+                <a href="signup.php">Registrarse</a>
                 <form action="Includes/logout.inc.php" method="post">
                     <button type="submit" name=logout-submit>Cerrar sesion</button>
                 </form>
