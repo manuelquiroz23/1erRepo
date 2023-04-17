@@ -21,6 +21,31 @@ if(isset($POST['login-submit'])){
             mysqli_stmt_bind_param($stmt, "ss", $mailuid, $password);
             mysqli_stmt_execute($stmt);
             $result = mysqli_stmt_get_result($stmt);
+            
+            if($row = mysqli_fetch_assoc()){
+                $pwdCheck = password_verify($password, $row['PasswordCliente']);
+                if($pwdCheck == false){ 
+                    header("Location: ../index.php?error=wrongpwd");
+                    exit(); 
+                }
+                else if($pwdCheck == true){
+                    session_start();
+                    $_SESSION['ClienteId'] = $row['IdCliente'];
+                    $_SESSION['ClienteuId'] = $row['IdCliente'];
+
+                    header("Location: ../index.php?login=success");
+                    exit(); 
+                }
+                else {
+                    header("Location: ../index.php?error=wrongpwd");
+                    exit(); 
+                }
+            }
+            else {
+                header("Location: ../index.php?error=nouser");
+                exit(); 
+            }
+
         }
     }
 }
