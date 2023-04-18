@@ -12,7 +12,7 @@ if(isset($_POST['login-submit'])){
         exit(); 
     }
     else {
-        $sql = "SELECT * FROM clientes WHERE `uIdClientes`='$mailuid' OR `CorreoCliente`='$mailuid'";
+        $sql = "SELECT * FROM clientes WHERE uIdClientes=? OR CorreoCliente=?";
         echo($sql);
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt, $sql)) {
