@@ -25,7 +25,6 @@
                 else if($_GET['signup']=="success"){
                     echo '<p class="signuperror">Iniciaste Sesion</p>';
                 }
-
             }
     
             ?>
