@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style2.css">
 </head>
 <body>
 
@@ -29,13 +29,12 @@
                     <input type="password" name="pwd" placeholder="Password">
                     <button type="submit" name="login-submit">Login</button>
                 </form>
-                <a href="signup.php">Registrarse</a>
                 <form action="Includes/logout.inc.php" method="post">
                     <button type="submit" name="logout-submit">Cerrar sesion</button>
                 </form>
+                <a href="signup.php">Registrarse</a>
             </div>
         </nav>
     </header>
-    
 </body>
 </html>

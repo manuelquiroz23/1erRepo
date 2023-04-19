@@ -36,16 +36,16 @@ if(isset($_POST['login-submit'])){
                     $_SESSION['ClienteId'] = $row['Id_Cliente'];
                     $_SESSION['ClienteuId'] = $row['uIdCliente'];
 
-                    header("Location: ../index.php?login=success");
+                    header("Location: ../pagprincipal.php?login=success");
                     exit(); 
                 }
                 else {
-                    header("Location: ../index.php?error=wrongpwd");
+                    header("Location: ../pagprincipal.php?error=wrongpwd");
                     exit(); 
                 }
             }
             else {
-                header("Location: ../index.php?error=nouser");
+                header("Location: ../pagprincipal.php?error=nouser");
                 exit(); 
             }
 
