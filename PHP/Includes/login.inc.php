@@ -40,12 +40,12 @@ if(isset($_POST['login-submit'])){
                     exit(); 
                 }
                 else {
-                    header("Location: ../index.php?error=wrongpwd");
+                    header("Location: ../pagprincipal.php?error=wrongpwd");
                     exit(); 
                 }
             }
             else {
-                header("Location: ../index.php?error=nouser");
+                header("Location: ../pagprincipal.php?error=nouser");
                 exit(); 
             }
 

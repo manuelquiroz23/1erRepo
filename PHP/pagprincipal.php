@@ -6,10 +6,10 @@
             <section class="section-default">
             <?php 
                 if(isset($_SESSION['ClienteId'])){
-                    echo '<p class="login-status">Cerraste Sesion</p>';
+                    echo '<p class="login-status">Iniciaste Sesion</p>';
                 }
                 else {
-                    echo'<p class="logout-status">Iniciaste Sesion</p>';
+                    echo'<p class="logout-status">Cerraste Sesion</p>';
                 }
             ?>
             </section>
