@@ -35,7 +35,7 @@ if(isset($_POST['login-submit'])){
                     $_SESSION['ClienteId'] = $row['Id_Cliente'];
                     $_SESSION['ClienteuId'] = $row['uIdClientes'];
 
-                    header("Location: ../pagprincipal.php?login=success");
+                    header("Location: ../indexcliente.php");
                     exit(); 
                 }
                 else {
