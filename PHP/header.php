@@ -14,9 +14,7 @@
 
     <header>
         <nav>
-            <a href="#">
-                <img src="Images/logo.jpeg" alt="logo">
-            </a>
+            <img src="Images/logo.jpeg" alt="logo">
             <ul>
                 <a href="signup.php">Registrarse</a>
                 <li><a href="pagprincipal.php">Pagina Principal</a></li>
