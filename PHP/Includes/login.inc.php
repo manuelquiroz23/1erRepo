@@ -35,8 +35,16 @@ if(isset($_POST['login-submit'])){
                     $_SESSION['ClienteId'] = $row['Id_Cliente'];
                     $_SESSION['ClienteuId'] = $row['uIdClientes'];
 
-                    header("Location: ../indexcliente.php");
-                    exit(); 
+                    if($_SESSION['ClienteuId']=='admin'){
+                        header("Location: ../indexadmin.php");
+                        exit(); 
+                    }else if($_SESSION['ClienteuId']=='empleado'){
+                        header("Location: ../indexempleado.php");
+                        exit(); 
+                    }else{
+                        header("Location: ../indexcliente.php");
+                        exit(); 
+                    }   
                 }
                 else {
                     header("Location: ../header.php?error=wrongpwd");
