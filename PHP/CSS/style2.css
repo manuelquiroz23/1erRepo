@@ -1,190 +1,244 @@
 /* Establecer el color de fondo de la página */
 body {
-    background-color: #f2f2f2;
-  }
-  
+  background-color: #f2f2f2;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #00a86b;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos para el título */
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+/* Estilos para los enlaces del encabezado */
+header a {
+  color: #fff;
+}
+
+/* Estilos para el formulario */
+.wrapper-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.section-default {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.section-default h1 {
+  margin-top: 0;
+}
+
+/* Estilos para los campos de entrada */
+.from-sginup input[type="text"],
+.from-sginup input[type="password"] {
+  width: 95%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos para los botones */
+.from-sginup button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00a86b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.from-sginup button[type="submit"]:hover {
+  background-color: #00663d;
+}
+
+/* Estilos para los mensajes de error */
+.signuperror {
+  color: red;
+  margin: 10px 0;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+nav form {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+nav form input[type="text"],
+nav form input[type="password"] {
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border: none;
+}
+
+nav form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+nav form button:hover {
+  background-color: #666;
+}
+
+nav a.register-btn {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+nav a.register-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+nav form.logout-form {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+nav form.logout-form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+}
+
+nav form.logout-form button:hover {
+  background-color: #666;
+}
+
+@media only screen and (max-width: 768px) {
   /* Estilos para el encabezado */
   header {
-    background-color: #00a86b;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Estilos para el título */
-  header h1 {
-    margin: 0;
-    font-size: 32px;
-  }
-  
-  /* Estilos para los enlaces del encabezado */
-  header a {
-    color: #fff;
-  }
-  
-  /* Estilos para el formulario */
-  .wrapper-main {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    text-align: center;
   }
   
-  .section-default {
-    max-width: 400px;
-    width: 100%;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  }
-  
-  .section-default h1 {
-    margin-top: 0;
-  }
-  
-  /* Estilos para los campos de entrada */
-  .from-sginup input[type="text"],
-  .from-sginup input[type="password"] {
-    width: 95%;
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  /* Estilos para los botones */
-  .from-sginup button[type="submit"] {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #00a86b;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .from-sginup button[type="submit"]:hover {
-    background-color: #00663d;
-  }
-  
-  /* Estilos para los mensajes de error */
-  .signuperror {
-    color: red;
-    margin: 10px 0;
-  }
-
-
-
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  header {
-    background-color: #f2f2f2;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
   }
   
   nav {
-    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-bottom: 2px solid transparent;
-    transition: all 0.3s ease;
-  }
-  
-  nav a:hover {
-    border-bottom: 2px solid #333;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    margin: 0 10px;
   }
   
   nav img {
-    height: 50px;
-    margin-right: 10px;
+    margin-bottom: 10px;
   }
   
   nav form {
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-left: auto;
+    margin: 10px 0;
   }
   
   nav form input[type="text"],
   nav form input[type="password"] {
-    padding: 5px;
-    margin-right: 10px;
-    border-radius: 3px;
-    border: none;
-  }
-  
-  nav form button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    padding: 5px 10px;
-    transition: all 0.3s ease;
-  }
-  
-  nav form button:hover {
-    background-color: #666;
+    margin-bottom: 10px;
+    margin-right: 0;
   }
   
   nav a.register-btn {
-    background-color: #fff;
-    color: #333;
-    border: 2px solid #333;
-    padding: 5px 10px;
-    border-radius: 3px;
-    margin-left: 10px;
+    margin-left: 0;
+    margin-top: 10px;
   }
   
-  nav a.register-btn:hover {
-    background-color: #333;
-    color: #fff;
+  .wrapper-main {
+    height: auto;
   }
   
-  nav form.logout-form {
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
+  .section-default {
+    max-width: 100%;
+    padding: 20px 10px;
   }
   
-  nav form.logout-form button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    padding: 5px 10px;
-    transition: all 0.3s ease;
-    margin-left: 10px;
+  .from-sginup input[type="text"],
+  .from-sginup input[type="password"] {
+    width: 100%;
   }
-  
-  nav form.logout-form button:hover {
-    background-color: #666;
-  }
-  
+}

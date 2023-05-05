@@ -25,6 +25,8 @@
                 else if($_GET['signup']=="success"){
                     echo '<p class="signuperror">Iniciaste Sesion</p>';
                 }
+            }else if(isset($GET['success'])){
+                echo '<p class="signup-submit">USUARIO REGISTRADO</p>';
             }
     
             ?>

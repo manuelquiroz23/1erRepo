@@ -14,12 +14,11 @@
 
     <header>
         <nav>
-            <a href="#">
-                <img src="Images/logo.jpeg" alt="logo">
-            </a>
+            <img src="Images/logo.jpeg" alt="logo">
             <ul>
+                <a href="signup.php">Registrarse</a>
                 <li><a href="pagprincipal.php">Pagina Principal</a></li>
-                <li><a href="#">Servicios</a></li>
+                <li><a href="HTML/servicios.html">Servicios</a></li>
                 <li><a href="#">Ubicacion</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
@@ -32,7 +31,7 @@
                 <form action="Includes/logout.inc.php" method="post">
                     <button type="submit" name="logout-submit">Cerrar sesion</button>
                 </form>
-                <a href="signup.php">Registrarse</a>
+                
             </div>
         </nav>
     </header>
