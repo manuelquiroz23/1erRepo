@@ -22,7 +22,7 @@
                 <li><a href="#">Nuevo pedido</a></li>
                 <li><a href="#">Pedidos anteriores</a></li>
                 <li><a href="#">Servicios disponibles</a></li>
-                <li><a href="#">Mi perfil</a></li>
+                <li><a href="perfil.php">Mi perfil</a></li>
             </ul>
             <form action="Includes/logout.inc.php" method="post">
                 <button type="submit" name="logout-submit">Cerrar sesion</button>
