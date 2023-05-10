@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planchaduria Loma Linda</title>
-    <link rel="stylesheet" href="CSS/designindexcliente.css">
+    <link rel="stylesheet" href="CSS/indexcliente.css">
 </head>
 <body>
 
@@ -15,15 +15,12 @@
                 <img src="Images/logo.jpeg" alt="logo">
             </a>
             <ul>
-                <li><a href="#">PLANCHADO</a></li>
-                <li><a href="#">COSTURERIA</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Nuevo pedido</a></li>
-                <li><a href="#">Pedidos anteriores</a></li>
-                <li><a href="productos.php">Servicios disponibles</a></li>
+                
                 <li><a href="perfil.php">Mi perfil</a></li>
             </ul>
+
+             <a href="productos.php" class="boton">Servicios disponibles</a>
+
             <form action="Includes/logout.inc.php" method="post">
                 <button type="submit" name="logout-submit">Cerrar sesion</button>
             </form>
@@ -31,7 +28,8 @@
     </header>
     
     <main>
-        <!-- Contenido principal de la página aquí -->
+        
+        
     </main>
     
 </body>
