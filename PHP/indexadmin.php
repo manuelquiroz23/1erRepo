@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
     <header>
         <nav>
             <a href="#">
-                <img src="Images/logo.jpeg" alt="logo">
+                <Images src="Images/logo.jpeg" alt="logo">
             </a>
             <ul>
                 <li><a href="#">PLANCHADO</a></li>

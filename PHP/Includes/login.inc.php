@@ -36,7 +36,7 @@ if(isset($_POST['login-submit'])){
                     $_SESSION['ClienteuId'] = $row['uIdClientes'];
 
                     if($_SESSION['ClienteuId']=='admin'){
-                        header("Location: ../indexadmin.php");
+                        header("Location: ../sitioweb/administrador/index.php");
                         exit(); 
                     }else if($_SESSION['ClienteuId']=='empleado'){
                         header("Location: ../indexempleado.php");
