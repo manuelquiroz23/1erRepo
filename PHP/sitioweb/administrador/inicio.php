@@ -7,6 +7,8 @@
                     <p>En esta pagina es para un administrador, si usted no es administrador, por favor cierre sesion</p>
                     <p class="lead">
                         <a class="btn btn-primary btn-lg" href="seccion/productos.php" role="button">Administrar productos</a>
+                        <a class="btn btn-primary btn-lg" href="../../pedidosadmin.php" role="button">Ver Pedidos</a>
+                        <a class="btn btn-primary btn-lg" href="../../verclientesadmin.php" role="button">Ver Clientes</a>
                     </p>
                 </div>
             </div>

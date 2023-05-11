@@ -15,7 +15,7 @@
         <ul class="nav navbar-nav">
 
             <li class="nav-item">
-                <a class="nav-link" href="index.php">Inicio</a>
+                <a class="nav-link" href="indexcliente.php">Inicio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="productos.php">Servicios</a>
@@ -24,11 +24,9 @@
                 <a class="nav-link" href="nosotros.php">Nosotros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contactanos.php">Contactanos</a>
+            <li><a class="nav-link" href="header.php">Cerrar Sesion</a></li>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="administrador/index.php">Administrador</a>
-            </li>
+            
 
         </ul>
     </nav>

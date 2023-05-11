@@ -3,7 +3,7 @@ session_start();
 
 $mensaje="";
 if($_POST){
-    if (($_POST['usuario']=="administrador") && ($_POST['contrasenia']=="planchadolomalinda")) {
+    if (($_POST['usuario']=="admin") && ($_POST['contrasenia']=="12345")) {
         $_SESSION['usuario']="ok";
         $_SESSION['nombreUsuario']="Administrador";
         header('Location:inicio.php');
@@ -61,7 +61,7 @@ if($_POST){
                         </div>
 
                         <button type="submit" class="btn btn-primary">Entrar al administrador</button>
-                        <li><a href="../../header.php">Cerrar Sesion</a></li>
+                        <a href="../../header.php">Cerrar Sesion</a>
 
                         </form>
                     </div>

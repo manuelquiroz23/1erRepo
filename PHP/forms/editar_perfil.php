@@ -16,9 +16,7 @@ $email = $_POST['email'];
 $clave = $_POST['clave'];
 $IdUsuario = $_SESSION['ClienteId'];
 
-
 $c = <<<SQL
-
 UPDATE
     clientes
 SET
@@ -31,5 +29,4 @@ SQL;
 
 mysqli_query($conn, $c);
 header("Location: ../perfil.php?");
-var_dump($_POST);
 ?> 

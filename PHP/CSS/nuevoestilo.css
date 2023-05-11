@@ -1,0 +1,125 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  /* Estilos del header */
+  
+  nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos del formulario de login */
+  
+  form[action="Includes/login.inc.php"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  form[action="Includes/login.inc.php"] input[type="text"],
+  form[action="Includes/login.inc.php"] input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 300px;
+  }
+  
+  form[action="Includes/login.inc.php"] button[type="submit"] {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    width: 150px;
+  }
+  
+  /* Estilos del formulario de registro */
+  
+  form[action="Includes/signup.inc.php"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  form[action="Includes/signup.inc.php"] input[type="text"],
+  form[action="Includes/signup.inc.php"] input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 300px;
+  }
+  
+  form[action="Includes/signup.inc.php"] button[type="submit"] {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    width: 150px;
+  }
+  
+  /* Estilos del título del formulario de registro */
+  
+  h2 {
+    margin-top: 50px;
+  }
+  
+  /* Estilos del contenido principal */
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+  }
+  
+  main p {
+    text-align: center;
+  }
+  
+  img {
+    max-width: 250px;
+  }
+    

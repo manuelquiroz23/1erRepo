@@ -1,244 +1,116 @@
-/* Establecer el color de fondo de la página */
-body {
-  background-color: #f2f2f2;
-}
-
-/* Estilos para el encabezado */
-header {
-  background-color: #00a86b;
-  color: #fff;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Estilos para el título */
-header h1 {
-  margin: 0;
-  font-size: 32px;
-}
-
-/* Estilos para los enlaces del encabezado */
-header a {
-  color: #fff;
-}
-
-/* Estilos para el formulario */
-.wrapper-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.section-default {
-  max-width: 400px;
-  width: 100%;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.section-default h1 {
-  margin-top: 0;
-}
-
-/* Estilos para los campos de entrada */
-.from-sginup input[type="text"],
-.from-sginup input[type="password"] {
-  width: 95%;
-  padding: 10px;
-  margin-top: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* Estilos para los botones */
-.from-sginup button[type="submit"] {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #00a86b;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.from-sginup button[type="submit"]:hover {
-  background-color: #00663d;
-}
-
-/* Estilos para los mensajes de error */
-.signuperror {
-  color: red;
-  margin: 10px 0;
-}
-
-
+/* Estilos generales */
 
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
 }
 
-header {
-  background-color: #f2f2f2;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+h1, h2 {
+  text-align: center;
 }
+
+/* Estilos del header */
 
 nav {
+  background-color: #333;
+  color: #fff;
   display: flex;
-  align-items: center;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  padding: 10px 20px;
-  margin: 0 10px;
-  border-bottom: 2px solid transparent;
-  transition: all 0.3s ease;
-}
-
-nav a:hover {
-  border-bottom: 2px solid #333;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-nav li {
-  margin: 0 10px;
+nav ul li {
+  margin-left: 20px;
 }
 
-nav img {
-  height: 50px;
-  margin-right: 10px;
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 
-nav form {
+/* Estilos del formulario de login */
+
+form[action="Includes/login.inc.php"] {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-left: auto;
+  margin: 20px;
 }
 
-nav form input[type="text"],
-nav form input[type="password"] {
-  padding: 5px;
-  margin-right: 10px;
-  border-radius: 3px;
-  border: none;
+form[action="Includes/login.inc.php"] input[type="text"],
+form[action="Includes/login.inc.php"] input[type="password"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 300px;
 }
 
-nav form button {
+form[action="Includes/login.inc.php"] button[type="submit"] {
   background-color: #333;
-  color: #fff;
   border: none;
-  border-radius: 3px;
-  padding: 5px 10px;
-  transition: all 0.3s ease;
-}
-
-nav form button:hover {
-  background-color: #666;
-}
-
-nav a.register-btn {
-  background-color: #fff;
-  color: #333;
-  border: 2px solid #333;
-  padding: 5px 10px;
-  border-radius: 3px;
-  margin-left: 10px;
-}
-
-nav a.register-btn:hover {
-  background-color: #333;
+  border-radius: 5px;
   color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  width: 150px;
 }
 
-nav form.logout-form {
+/* Estilos del formulario de registro */
+
+form[action="Includes/signup.inc.php"] {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-left: 10px;
+  margin: 20px;
 }
 
-nav form.logout-form button {
+form[action="Includes/signup.inc.php"] input[type="text"],
+form[action="Includes/signup.inc.php"] input[type="password"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 300px;
+}
+
+form[action="Includes/signup.inc.php"] button[type="submit"] {
   background-color: #333;
-  color: #fff;
   border: none;
-  border-radius: 3px;
-  padding: 5px 10px;
-  transition: all 0.3s ease;
-  margin-left: 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  width: 150px;
 }
 
-nav form.logout-form button:hover {
-  background-color: #666;
+/* Estilos del título del formulario de registro */
+
+h2 {
+  margin-top: 50px;
 }
 
-@media only screen and (max-width: 768px) {
-  /* Estilos para el encabezado */
-  header {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  header h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  nav {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  nav img {
-    margin-bottom: 10px;
-  }
-  
-  nav form {
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 0;
-  }
-  
-  nav form input[type="text"],
-  nav form input[type="password"] {
-    margin-bottom: 10px;
-    margin-right: 0;
-  }
-  
-  nav a.register-btn {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-  
-  .wrapper-main {
-    height: auto;
-  }
-  
-  .section-default {
-    max-width: 100%;
-    padding: 20px 10px;
-  }
-  
-  .from-sginup input[type="text"],
-  .from-sginup input[type="password"] {
-    width: 100%;
-  }
+/* Estilos del contenido principal */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
 }

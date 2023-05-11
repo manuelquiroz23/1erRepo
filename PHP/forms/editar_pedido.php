@@ -25,9 +25,10 @@ if (mysqli_query($conn, $sql)) {
 	// Obtener el ID generado automáticamente
 	$id_pedido = mysqli_insert_id($conn);
 
-	echo "Pedido confirmado. El ID del pedido es $id_pedido.";
+	echo '<script>alert("Pedido realizado. El ID del pedido es '.$id_pedido.'."); window.location.href = "../indexcliente.php";</script>';
+
 } else {
-	echo "Error al confirmar el pedido: " . mysqli_error($conn);
+	echo '<script>alert("Error a confirmar el pedido."); window.location.href = "../indexcliente.php";</script>' . mysqli_error($conn);
 }
 
 mysqli_close($conn);

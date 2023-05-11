@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  /* Estilos del header */
+  nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  nav a {
+    display: inline-block;
+  }
+  
+  nav img {
+    height: 50px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .boton {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .boton:hover {
+    background-color: #555;
+  }
+  
+  /* Estilos del formulario de pedido */
+  form[action="forms/editar_pedido.php"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  form[action="forms/editar_pedido.php"] label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  form[action="forms/editar_pedido.php"] input[type="text"],
+  form[action="forms/editar_pedido.php"] input[type="number"],
+  form[action="forms/editar_pedido.php"] select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 300px;
+  }
+  
+  form[action="forms/editar_pedido.php"] input[type="submit"] {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    width: 150px;
+  }
+  
+  form[action="forms/editar_pedido.php"] input[type="submit"]:hover {
+    background-color: #555;
+  }
+  
