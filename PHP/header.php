@@ -18,8 +18,7 @@
             <ul>
                 <li><a href="pagprincipal.php">Pagina Principal</a></li>
                 <li><a href="HTML/servicios.html">Servicios</a></li>
-                <li><a href="#">Ubicacion</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="https://goo.gl/maps/VwwQf88H7ibsYzG46">Ubicacion</a></li>
             </ul>
             <div>
                 <form action="Includes/login.inc.php" method="post">

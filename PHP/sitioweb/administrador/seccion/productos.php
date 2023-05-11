@@ -197,6 +197,7 @@ $listaProductos=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
                         <input type="submit" name="accion" value="Seleccionar" class="btn btn-primary" />
 
                         <input type="submit" name="accion" value="Borrar" class="btn btn-danger" />
+                        
 
                     </form>
 

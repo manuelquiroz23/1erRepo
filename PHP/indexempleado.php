@@ -10,7 +10,6 @@
         <h1>Lista de Pedidos</h1>
         <form action="Includes/logout.inc.php" method="post">
             <button type="submit" name="logout-submit">Cerrar sesion</button>
-            <a class="nav-item nav-link" href="sitioweb/administrador/inicio.php">Volver</a>
         </form>
         
     </header>

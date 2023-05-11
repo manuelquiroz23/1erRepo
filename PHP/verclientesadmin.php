@@ -30,6 +30,7 @@ $fClientes = mysqli_query($conn, $cClientes);
 			<ul>
 				<li><a href="sitioweb/administrador/seccion/productos.php">Productos</a></li>
 				<li><a href="pedidosadmin.php">Pedidos</a></li>
+				<a class="nav-item nav-link" href="sitioweb/administrador/inicio.php">Volver</a>
 				<li><a href="header.php">Cerrar sesión</a></li>
 			</ul>
 		</nav>

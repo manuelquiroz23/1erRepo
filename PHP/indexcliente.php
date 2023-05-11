@@ -17,9 +17,8 @@
             <ul>
                 
                 <li><a href="perfil.php">Mi perfil</a></li>
+                <li><a href="https://goo.gl/maps/VwwQf88H7ibsYzG46">Ubicacion</a></li>
             </ul>
-
-             <a href="productos.php" class="boton">Servicios disponibles</a>
 
             <form action="Includes/logout.inc.php" method="post">
                 <button type="submit" name="logout-submit">Cerrar sesion</button>
