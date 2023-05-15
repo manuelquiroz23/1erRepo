@@ -1,17 +1,16 @@
 /* Estilos generales */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
   
-  h1, h2 {
+  h1,
+  h2 {
     text-align: center;
   }
   
   /* Estilos del header */
-  
   nav {
     background-color: #333;
     color: #fff;
@@ -37,7 +36,6 @@ body {
   }
   
   /* Estilos del formulario de login */
-  
   form[action="Includes/login.inc.php"] {
     display: flex;
     flex-direction: column;
@@ -53,7 +51,7 @@ body {
     font-size: 16px;
     margin-bottom: 10px;
     padding: 10px;
-    width: 200px;
+    width: 300px;
   }
   
   form[action="Includes/login.inc.php"] button[type="submit"] {
@@ -64,11 +62,10 @@ body {
     cursor: pointer;
     font-size: 16px;
     padding: 10px;
-    width: 50px;
+    width: 150px;
   }
   
   /* Estilos del formulario de registro */
-  
   form[action="Includes/signup.inc.php"] {
     display: flex;
     flex-direction: column;
@@ -99,13 +96,11 @@ body {
   }
   
   /* Estilos del título del formulario de registro */
-  
-  h2 {
+  main h2 {
     margin-top: 50px;
   }
   
   /* Estilos del contenido principal */
-  
   main {
     display: flex;
     flex-direction: column;
@@ -120,6 +115,6 @@ body {
   }
   
   img {
-    max-width: 200px;
+    max-width: 250px;
   }
-    
+  

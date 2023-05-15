@@ -1,10 +1,10 @@
-<?php include("template/cabecera.php"); ?>
+<?php include("/Applications/XAMPP/xamppfiles/htdocs/1erRepo/PHP/sitioweb/administrador/template/cabecera.php"); ?>
+
             <div class="col-md-12">
                 <div class="jumbotron">
                     <h1 class="display-3">Bienvenido <?php echo $nombreUsuario; ?></h1>
-                    <p class="lead">Vamos a administrar nuestros productos en el sitio web</p>
+                    <p class="lead">Vamos a administrar los servicios en el sitio web</p>
                     <hr class="my-2">
-                    <p>En esta pagina es para un administrador, si usted no es administrador, por favor cierre sesion</p>
                     <p class="lead">
                         <a class="btn btn-primary btn-lg" href="seccion/productos.php" role="button">Administrar productos</a>
                         <a class="btn btn-primary btn-lg" href="../../pedidosadmin.php" role="button">Ver Pedidos</a>

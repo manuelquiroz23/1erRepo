@@ -10,9 +10,8 @@
         <h1>Lista de Pedidos</h1>
         <form action="Includes/logout.inc.php" method="post">
             <button type="submit" name="logout-submit">Cerrar sesion</button>
-            <a class="nav-item nav-link" href="sitioweb/administrador/inicio.php">Volver</a>
         </form>
-        
+        <a class="nav-item nav-link" href="sitioweb/administrador/inicio.php">Volver</a>
     </header>
     
     <main>
@@ -24,6 +23,8 @@
                     <th>Direccion</th>
                     <th>Total Piezas</th>
                     <th>Servicio</th>
+                    <th>Estado</th>
+                    <th>Total a pagar</th>
                 </tr>
             </thead>
             <tbody>
@@ -42,6 +43,8 @@
                     $domiciliopedido = $fila['DomicilioPedido'];
                     $totalpiezas = $fila['NoDePiezas'];
                     $servicios = $fila['servicio'];
+                    $status = $fila['totalpagar'];
+                    $totalpagar = $fila['status'];
                     
                     echo "<tr>";
                     echo "<td>$id_pedido</td>";
@@ -49,6 +52,8 @@
                     echo "<td>$domiciliopedido</td>";
                     echo "<td>$totalpiezas</td>";
                     echo "<td>$servicios</td>";
+                    echo "<td>$totalpagar</td>";
+                    echo "<td>$status</td>";
                     echo "<td>
                             <a href='eliminar_pedidos.php?id=$id_pedido' class='btn btn-danger'>Eliminar</a>
                             <a href='editar_pedidos.php?id=$id_pedido' class='btn btn-primary'>Editar</a>

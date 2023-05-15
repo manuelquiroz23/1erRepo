@@ -12,15 +12,17 @@ $fila = mysqli_fetch_array($result);
 $nompedido = $fila['NomPedido'];
 $domiciliopedido = $fila['DomicilioPedido'];
 $servicios = $fila['servicio'];
-
+$totalpagar = $fila['totalpagar'];
 // Verificar si se envió el formulario para actualizar el pedido
 if(isset($_POST['actualizar'])) {
     $nompedido = $_POST['nompedido'];
     $domiciliopedido = $_POST['domiciliopedido'];
     $servicios = $_POST['servicios'];
-    
+    $status = $_POST['status'];
+    $id_pedido = $_POST['id_pedido'];
+    $totalpagar = $_POST['totalpagar'];
     // Actualizar el pedido en la base de datos
-    $query = "UPDATE pedidos SET NomPedido = '$nompedido', DomicilioPedido = '$domiciliopedido', servicio = '$servicios' WHERE Id_Pedido = $id_pedido";
+    $query = "UPDATE pedidos SET NomPedido = '$nompedido', DomicilioPedido = '$domiciliopedido', servicio = '$servicios', status = '$status', totalpagar = '$totalpagar' WHERE Id_Pedido = $id_pedido";
     mysqli_query($conn, $query);
     
     // Redirigir a la lista de pedidos
@@ -55,6 +57,20 @@ if(isset($_POST['actualizar'])) {
                 <label for="servicios">Servicios:</label>
                 <input type="text" class="form-control" id="servicios" name="servicios" value="<?php echo $servicios; ?>">
             </div>
+            <div class="form-group">
+                <label for="status">Status:</label>
+                <select class="form-control" id="status" name="status">
+                    <option value="Aceptado">Aceptado</option>
+                    <option value="Realizanose">En proceso</option>
+                    <option value="Terminado">Terminado</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="totalpagar">Total a Pagar:</label>
+                <input type="text" class="form-control" id="totalpagar" name="totalpagar" value="<?php echo $totalpagar; ?>">
+            </div>
+            <input type="hidden" name="id_pedido" value="<?php echo $id_pedido; ?>">
+
             <button type="submit" class="btn btn-primary" name="actualizar">Actualizar</button>
         </form>
     </main>

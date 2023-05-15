@@ -13,7 +13,7 @@ include('../Includes/dbh.inc.php');
 
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
-$clave = $_POST['clave'];
+$clave = password_hash($_POST['clave'], PASSWORD_DEFAULT);
 $IdUsuario = $_SESSION['ClienteId'];
 
 $c = <<<SQL

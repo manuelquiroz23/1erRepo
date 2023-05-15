@@ -28,7 +28,6 @@ session_start();
     <nav class="navbar navbar-expand navbar-light bg-light">
         <div class="nav navbar-nav">
             <a class="nav-item nav-link" href="../../pagprincipal.php">Cerrar Sesion</a>
-            <a class="nav-item nav-link" href="../inicio.php">Volver</a>
         </div>
     </nav>
     <div class="container">

@@ -119,7 +119,7 @@ $listaProductos=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
 
     <div class="card">
         <div class="card-header">
-            Datos de Productos
+            Datos de los Servicios
         </div>
         <div class="card-body">
             
@@ -154,6 +154,8 @@ $listaProductos=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
                     <button type="submit" name="accion" <?php echo($accion=="Seleccionar")?"disabled":""; ?> value="Agregar" class="btn btn-success">Agregar</button>
                     <button type="submit" name="accion" <?php echo($accion!=="Seleccionar")?"disabled":""; ?> value="Modificar" class="btn btn-warning">Modificar</button>
                     <button type="submit" name="accion" <?php echo($accion!=="Seleccionar")?"disabled":""; ?> value="Cancelar" class="btn btn-info">Cancelar</button>
+
+                    <a class="nav-item nav-link" href="../inicio.php">Volver</a>
                 </div>
 
 
@@ -197,6 +199,7 @@ $listaProductos=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
                         <input type="submit" name="accion" value="Seleccionar" class="btn btn-primary" />
 
                         <input type="submit" name="accion" value="Borrar" class="btn btn-danger" />
+                        
                         
 
                     </form>

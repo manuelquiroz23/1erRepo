@@ -32,5 +32,5 @@ $a = mysqli_fetch_assoc($fDatos);
         </div>
     </div>
     <div><input class="aligned" type="submit" value="Guardar cambios" /></div>
-    <a href="indexcliente.php">Regresar</a>
+    <a class="nav-item nav-link" href="sitioweb/administrador/inicio.php">Volver</a>
 </form>
