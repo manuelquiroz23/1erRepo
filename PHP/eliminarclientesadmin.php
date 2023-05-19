@@ -1,3 +1,13 @@
+<script>
+    function confirmarEliminacion() {
+        var respuesta = confirm("¿Está seguro de que desea eliminar al cliente?");
+        if (respuesta == true) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
 <?php
 // Conexión a la base de datos
 include("Includes/dbh.inc.php");

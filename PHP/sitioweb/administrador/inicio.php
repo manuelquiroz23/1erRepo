@@ -1,4 +1,4 @@
-<?php include("/Applications/XAMPP/xamppfiles/htdocs/1erRepo/PHP/sitioweb/administrador/template/cabecera.php"); ?>
+<?php include("template/cabecera.php"); ?>
 
             <div class="col-md-12">
                 <div class="jumbotron">
@@ -6,7 +6,6 @@
                     <p class="lead">Vamos a administrar los servicios en el sitio web</p>
                     <hr class="my-2">
                     <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="seccion/productos.php" role="button">Administrar productos</a>
                         <a class="btn btn-primary btn-lg" href="../../pedidosadmin.php" role="button">Ver Pedidos</a>
                         <a class="btn btn-primary btn-lg" href="../../verclientesadmin.php" role="button">Ver Clientes</a>
                     </p>

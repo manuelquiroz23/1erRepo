@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Lista de Pedidos</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <script>
+        function confirmarEliminacion() {
+            var respuesta = confirm("¿Está seguro de que desea eliminar el pedido?");
+            if (respuesta == true) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -55,7 +65,7 @@
                     echo "<td>$totalpagar</td>";
                     echo "<td>$status</td>";
                     echo "<td>
-                            <a href='eliminar_pedidos.php?id=$id_pedido' class='btn btn-danger'>Eliminar</a>
+                            <a href='eliminar_pedidosadmin.php?id=$id_pedido' class='btn btn-danger' onclick='return confirmarEliminacion()'>Eliminar</a>
                             <a href='editar_pedidos.php?id=$id_pedido' class='btn btn-primary'>Editar</a>
                           </td>";
                     echo "</tr>";
@@ -70,3 +80,4 @@
     </footer>
 </body>
 </html>
+

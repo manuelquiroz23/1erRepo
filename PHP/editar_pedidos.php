@@ -36,7 +36,7 @@ if(isset($_POST['actualizar'])) {
 <head>
     <meta charset="UTF-8">
     <title>Editar Pedido</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
 </head>
 <body>
     <header>
@@ -44,6 +44,7 @@ if(isset($_POST['actualizar'])) {
     </header>
     
     <main>
+        <a class="nav-item nav-link" href="pedidosadmin.php">Volver</a>
         <form method="POST">
             <div class="form-group">
                 <label for="nompedido">Cliente:</label>

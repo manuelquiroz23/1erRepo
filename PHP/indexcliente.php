@@ -1,3 +1,13 @@
+<?php
+session_start();
+if(isset($_SESSION['ClienteuId'])) {
+    $clienteuId = $_SESSION['ClienteuId'];
+    $bienvenida = "Bienvenido, " . $clienteuId . "!";
+} else {
+    header("Location: ../header.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,8 +24,6 @@
                 <img src="Images/logo.jpeg" alt="logo">
             </a>
             <ul>
-                
-                <li><a href="perfil.php">Mi perfil</a></li>
                 <li><a href="verpedidoscliente.php">Mis pedidos</a></li>
                 <li><a href="https://goo.gl/maps/VwwQf88H7ibsYzG46">Ubicacion</a></li>
             </ul>
@@ -26,6 +34,9 @@
         </nav>
     </header>
     <main>
+        <div class="mensaje">
+            <?php echo $bienvenida; ?>
+        </div>
         <style>
             .mensaje {
                 text-align: center;
@@ -48,24 +59,14 @@
         </style>
         <div class="mensaje">
             </br>
-            <?php
-                session_start();
-                if(isset($_SESSION['ClienteuId'])) {
-                    $clienteuId = $_SESSION['ClienteuId'];
-                    echo "Bienvenido " . $clienteuId;
-                } else {
-                    header("Location: ../header.php");
-                    exit();
-                }
-            ?>
+
         </div>
         <h1>Hacer Pedido</h1>
         </div>
         <div class="center">
             <form action="forms/editar_pedido.php" method="post">
                 <div class="form-column">
-                    <label for="nombre">Nombre completo:</label>
-                    <input type="text" id="nombre" name="nombre"><br>
+                    <input type="text" id="nombre" hidden=true name="nombre" value="<?php echo $clienteuId; ?>" readonly><br>
 
                     <label for="domicilio">Domicilio:</label>
                     <input type="text" id="domicilio" name="domicilio"><br>
@@ -127,3 +128,5 @@
     </main>
 </body>
 </html>
+
+

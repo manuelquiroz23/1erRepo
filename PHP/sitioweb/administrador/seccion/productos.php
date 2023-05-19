@@ -112,7 +112,7 @@ switch($accion){
 $sentenciaSQL = $conexion->prepare("SELECT * FROM productos");
 $sentenciaSQL->execute();
 $listaProductos=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
-
+include("../template/cabecera.php");
 ?>
 <div class="col-md-5">
 
@@ -212,6 +212,3 @@ $listaProductos=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
     </table>
 
 </div>
-
-
-<?php include("../template/pie.php"); ?>
